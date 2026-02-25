@@ -90,6 +90,20 @@ public class MusicOrganizer
         }
     }
     
+    
+    /** 
+     * List the name of the file matching the given search string.
+     */
+    public void listMatching(String searchString){
+        for(String filename : files) {
+            if(filename.contains(searchString)){
+                // A match.
+                System.out.println(filename);
+            }
+        }
+    }
+    
+    
     /** Implement the listAllFiles method in your version of the music-organizer project
      * 
      */
